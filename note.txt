@@ -1,0 +1,90 @@
+npm init react-app my-app
+cd my-app
+npm start
+
+
+npm install concurrently --save-dev
+
+
+--shell \"powershell.exe\
+npm install react-icons
+
+
+npm i react-router-dom react-icons styled-components@5.3.10
+
+function Navbar() {
+  return (
+<Nav>
+      <NavLink href="/">Home</NavLink>
+      <NavLink href="/about">About</NavLink>
+      <NavLink href="/contact">Contact</NavLink>
+    </Nav>
+
+  );
+}
+
+
+import { FaHome } from 'react-icons/fa';
+function MyComponent() {
+  return (
+    <div>
+      <FaHome /> Home Page
+    </div>
+  );
+}
+npm install react-icons --save
+
+import { FaHome, FaUser, FaBell } from 'react-icons/fa';
+
+import React from 'react';
+import { FaHome, FaUser, FaBell } from './icons'; // Import from icons.js
+
+function MyComponent() {
+  return (
+    <div>
+      <FaHome size={32} color="blue" /> Home Page
+      <FaUser /> Profile
+      <FaBell /> Notifications
+    </div>
+  );
+}
+<Bell size={32} color="blue" /> // Adjust size and color
+import { Bell } from 'react-bootstrap-icons';
+
+function MyComponent() {
+  return (
+    <div>
+      <Bell />
+      {/* Your other content */}
+    </div>
+  );
+}
+
+......Icons......
+
+https://icons.getbootstrap.com/
+
+
+npm install react-tilt
+import Tilt from 'react-parallax-tilt';
+
+    "start": "node server",
+    "server": "nodemon server",
+    "my-app": "npm start --prefix my-app",
+    "both": "concurrently \"npm run server\" \"npm run my-app\"  "
+
+... npm install npm-run-all --save-dev ....
+    "start": "npm-run-all -p serve my-app",  
+    "serve": "nodemon server",  
+    "my-app": "npm start --prefix my-app" 
+    npm start
+
+
+
+
+  const selectedUserObject = users.find((user) => user._id === userId);
+  if (selectedUserObject) { // Check if user exists locally
+    // Directly navigate with local data (if available)
+    
+    navigate(`/users/${userId}`, { state: { selectedUser: selectedUserObject } });
+  } 

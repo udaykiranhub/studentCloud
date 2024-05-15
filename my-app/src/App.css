@@ -1,0 +1,124 @@
+.signup-form{
+  background-color: rgba(159, 237, 233, 0.425);
+  height: 1000px;
+}
+#layout{
+  background-color: rgb(139, 136, 168);
+ height: 1000px;
+ 
+}
+#data{
+  background-color: rgb(177, 176, 202);
+  height: 1000px;
+  width: 800px;
+}
+
+#signForm{
+  width: 500px;
+  position: relative;
+}
+
+/* this is the All Data getting */
+#user_heading{
+  border:1px solid black;
+  background-color: rgb(124, 142, 247);
+}
+#users{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+#user{
+  padding: 10px 10px 10px 10px;
+}
+
+
+.data-container{
+  display:grid;
+  grid-template-areas: "data data data data data adds";
+  background-color: rgb(26, 5, 5);
+  gap:1px;
+  padding: 5px;
+  
+}
+
+.data-container > div{
+  background-color: rgb(229, 229, 230);
+}
+
+
+.data-item1{
+
+  grid-area: "data";
+
+}
+.data-item2{
+
+  grid-area: "adds";
+}
+
+/*closing...........*/
+
+
+
+
+
+
+
+.single-user-details{
+  border: 2px solid seagreen;
+  width: auto;
+  height: auto;
+  color:rgb(8, 8, 18);
+
+}
+
+
+#mydata h1{
+  border:2px solid green;
+  background-color:beige ;
+}
+#mydata p{
+  color:rgb(5, 5, 31);
+}
+#mydata{
+  text-shadow: 2px 2px 8px rgb(50, 203, 168);
+}
+#mydata img{
+  border-radius: 50%;
+}
+
+#mydata center{
+  outline: 10px solid green;
+}
+#mydata span{
+  color: black;
+}
+.user-details-one{
+grid-area: "one";
+
+background-color: rgb(234, 245, 245);
+}
+.user-details-two{
+grid-area: "two";
+
+background-color: rgb(234, 245, 245);
+}
+.user-details-zero{
+ grid-area: "zero";
+ display:block;
+
+background-color: rgb(234, 245, 245);
+
+
+}
+.user-details-container{
+  display: grid;
+  grid-template-areas: "zero one   two"
+                       "zero one  two";
+ gap:2px;
+}
+
+.user-details-container span{
+  color:black;
+}
